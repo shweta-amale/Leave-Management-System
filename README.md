@@ -1,42 +1,17 @@
 - Setup Steps [Using Maven]:
-leave-management-system/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── com/
-│   │   │   │   └── lms/
-│   │   │   │       ├── LeaveManagementSystem.java
-│   │   │   │       ├── model/
-│   │   │   │       │   ├── Employee.java
-│   │   │   │       │   ├── LeaveRequest.java
-│   │   │   │       │   └── LeaveType.java
-│   │   │   │       ├── service/
-│   │   │   │       │   ├── EmployeeService.java
-│   │   │   │       │   └── LeaveService.java
-│   │   │   │       ├── repository/
-│   │   │   │       │   ├── EmployeeRepository.java
-│   │   │   │       │   └── LeaveRepository.java
-│   │   │   │       └── exception/
-│   │   │   │           └── LeaveManagementException.java
-│   │   │   └── resources/
-│   │   └── test/
-│   │       └── java/
-│   ├── pom.xml 
-│   └── README.md
-
-Open terminal in VS Code
-Run: mvn clean compile
-Run: mvn exec:java -Dexec.mainClass="com.lms.LeaveManagementSystem"
+1. Open terminal in VS Code
+2. Run: mvn clean compile
+3. Run: mvn exec:java -Dexec.mainClass="com.lms.LeaveManagementSystem"
 
 - Edge Cases Handled
-*Core Edge Cases:
+- Core Edge Cases:
 1. Applying for leave before joining date 
 2. Applying for more days than available balance 
 3. Overlapping leave requests
 4. Employee not found 
 5. Invalid dates 
 
-*Additional Edge Cases:
+- Additional Edge Cases:
 1. Weekend Calculation - Only working days counted for leave
 2. Future Joining Dates - Prevents adding employees with future joining dates
 3. Past Leave Applications - Cannot apply for leave in the past
