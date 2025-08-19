@@ -1,0 +1,5 @@
+**The current architecture is designed to easily scale:
+1. Replace in-memory storage with database
+2. Add REST API layer with Spring Boot
+3. Implement microservices architecture
+4. Add caching and load balancing
